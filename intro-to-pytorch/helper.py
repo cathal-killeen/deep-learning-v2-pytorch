@@ -77,6 +77,8 @@ def view_classify(img, ps, version="MNIST"):
     ax2.set_yticks(np.arange(10))
     if version == "MNIST":
         ax2.set_yticklabels(np.arange(10))
+    if version == "CatDog":
+        ax2.set_yticklabels(['Cat','Dog'])
     elif version == "Fashion":
         ax2.set_yticklabels(['T-shirt/top',
                             'Trouser',
